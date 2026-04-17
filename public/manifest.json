@@ -1,0 +1,26 @@
+{
+  "name": "Portal do Governo de Moçambique | Apoio ao Empreendedorismo",
+  "short_name": "Portal Empreendedorismo",
+  "description": "Portal Oficial do Programa de Apoio ao Micro-Empreendedorismo do Governo de Moçambique",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#005a32",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/logo-governo-oficial",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo-governo-oficial",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
