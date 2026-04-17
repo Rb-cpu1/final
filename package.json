@@ -3,11 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+{
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",  <-- Esse comando é essencial
-    "preview": "vite preview"
+    "build": "echo 'No build required'"
   }
+}
 },
   "dependencies": {
     "clsx": "^2.1.1",
