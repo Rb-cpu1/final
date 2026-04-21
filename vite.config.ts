@@ -8,11 +8,9 @@ import { viteSingleFile } from "vite-plugin-singlefile";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [
     react({
-      // Adicionado para melhor compatibilidade com Vercel
       include: ["src/**/*.tsx", "src/**/*.ts"],
       exclude: ["node_modules"]
     }),
@@ -25,7 +23,6 @@ export default defineConfig({
     },
   },
   build: {
-    // Configurações para build mais robusto
     outDir: "dist",
     assetsDir: "assets",
     sourcemap: false,
@@ -59,4 +56,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom', 'framer-motion', 'lucide-react'],
   },
+  base: './',
+  publicDir: 'public',
+  clearScreen: false,
+  logLevel: 'info',
+  mode: 'production'
 });
