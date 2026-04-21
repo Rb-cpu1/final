@@ -24,7 +24,7 @@ export default defineConfig({
   },
   build: {
     outDir: "dist",
-    assetsDir: "assets",
+    assetsDir: "",
     sourcemap: false,
     minify: "terser",
     terserOptions: {
@@ -42,11 +42,12 @@ export default defineConfig({
       },
     },
   },
-  server: {
+  base: process.env.NODE_ENV === 'production' ? '/portal-empreendedorismo/' : '/',
+  preview: {
     port: 3000,
     host: true,
   },
-  preview: {
+  server: {
     port: 3000,
     host: true,
   },
@@ -56,7 +57,6 @@ export default defineConfig({
   optimizeDeps: {
     include: ['react', 'react-dom', 'framer-motion', 'lucide-react'],
   },
-  base: './',
   publicDir: 'public',
   clearScreen: false,
   logLevel: 'info',
